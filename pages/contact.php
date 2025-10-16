@@ -60,16 +60,46 @@
             <div class="contact-form-wrapper">
                 <h2>Send Us a Message</h2>
                 <?php
+                require_once __DIR__ . '/../includes/db.php';
+                
                 $message = '';
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    $name = htmlspecialchars($_POST['name'] ?? '');
-                    $email = htmlspecialchars($_POST['email'] ?? '');
-                    $phone = htmlspecialchars($_POST['phone'] ?? '');
-                    $subject = htmlspecialchars($_POST['subject'] ?? '');
-                    $msg = htmlspecialchars($_POST['message'] ?? '');
+                    $name = trim($_POST['name'] ?? '');
+                    $email = trim($_POST['email'] ?? '');
+                    $phone = trim($_POST['phone'] ?? '');
+                    $subject = trim($_POST['subject'] ?? '');
+                    $msg = trim($_POST['message'] ?? '');
                     
                     if ($name && $email && $msg) {
-                        $message = '<div class="alert alert-success"><i class="fas fa-check-circle"></i> Thank you for contacting us! We will get back to you soon.</div>';
+                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                            $message = '<div class="alert alert-error"><i class="fas fa-exclamation-circle"></i> Please enter a valid email address.</div>';
+                        } else {
+                            try {
+                                $db = getDbConnection();
+                                if ($db) {
+                                    $stmt = $db->prepare("INSERT INTO contact_submissions (name, email, phone, subject, message) VALUES (?, ?, ?, ?, ?)");
+                                    $success = $stmt->execute([
+                                        htmlspecialchars($name),
+                                        htmlspecialchars($email),
+                                        htmlspecialchars($phone),
+                                        htmlspecialchars($subject),
+                                        htmlspecialchars($msg)
+                                    ]);
+                                    
+                                    if ($success) {
+                                        $message = '<div class="alert alert-success"><i class="fas fa-check-circle"></i> Thank you for contacting us! Your message has been successfully submitted and we will get back to you soon.</div>';
+                                        $_POST = [];
+                                    } else {
+                                        $message = '<div class="alert alert-error"><i class="fas fa-exclamation-circle"></i> Failed to submit your message. Please try again later.</div>';
+                                    }
+                                } else {
+                                    $message = '<div class="alert alert-error"><i class="fas fa-exclamation-circle"></i> Database connection error. Please try again later.</div>';
+                                }
+                            } catch (PDOException $e) {
+                                error_log("Contact form error: " . $e->getMessage());
+                                $message = '<div class="alert alert-error"><i class="fas fa-exclamation-circle"></i> An error occurred. Please try again later.</div>';
+                            }
+                        }
                     } else {
                         $message = '<div class="alert alert-error"><i class="fas fa-exclamation-circle"></i> Please fill in all required fields.</div>';
                     }

@@ -88,8 +88,17 @@ php -S 0.0.0.0:5000 router.php
 - **Email**: info@omnigas.com
 - **Phone**: +44 7780378098
 
+## Database Schema
+The contact form submissions are stored in PostgreSQL database:
+- Table: `contact_submissions`
+- Fields: id, name, email, phone, subject, message, created_at
+- All form submissions are validated and sanitized before storage
+
 ## Recent Changes
 - October 16, 2025: Initial website creation with all pages
 - All content sourced from company presentation (PPT)
 - Professional design with energy/technology industry aesthetics
 - Fully responsive layout for all devices
+- Contact form now saves submissions to PostgreSQL database with proper validation
+- Email validation and error handling implemented
+- Database connection management with PDO
