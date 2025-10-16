@@ -1,0 +1,29 @@
+# PHP
+*.log
+*.cache
+/vendor/
+composer.phar
+composer.lock
+
+# Session files
+/tmp/
+*.session
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+/logs/
+*.log
