@@ -3,7 +3,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3><i class="fas fa-fire"></i> OmniGas Technologies PLC</h3>
+                    <img src="assets/images/logo.jpeg" alt="OmniGas Technologies PLC" class="logo-img">
                     <p>Leading provider of safe, efficient, and innovative LPG infrastructure and solutions worldwide.</p>
                 </div>
                 <div class="footer-col">

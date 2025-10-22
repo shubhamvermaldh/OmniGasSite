@@ -16,8 +16,8 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.php?page=home">
-                        <img src="assets/images/logo.jpeg" alt="OmniGas Technologies PLC" class="logo-img">
-                        <span class="logo-text">OmniGas Technologies</span>
+                        <img src="assets/images/logo.png" alt="OmniGas Technologies PLC" class="logo-img">
+                        <!-- <span class="logo-text">OmniGas Technologies</span> -->
                     </a>
                 </div>
                 <nav class="main-nav">
