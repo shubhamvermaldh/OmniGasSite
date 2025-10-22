@@ -1,4 +1,4 @@
-<section class="hero-section">
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%), url('assets/images/lpg_gas_plant_indust_a5fd5858.jpg') center/cover no-repeat;">
     <div class="container">
         <div class="hero-content">
             <h1 class="hero-title">Energy Transition Solutions</h1>
@@ -51,6 +51,29 @@
     </div>
 </section>
 
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Work in Action</h2>
+            <p class="section-subtitle">Delivering Excellence in LPG Solutions</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images/company-1.jpeg" alt="OmniGas Operations" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/company-2.jpeg" alt="LPG Installation" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/company-3.jpeg" alt="Autogas Conversion" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/company-4.jpeg" alt="Our Team" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="energy-shift">
     <div class="container">
         <div class="section-header">
@@ -81,10 +104,10 @@
     </div>
 </section>
 
-<section class="conversion-model">
+<section class="conversion-model" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/car_mechanic_autogas_e6830a72.jpg') center/cover no-repeat fixed;">
     <div class="container">
-        <div class="section-header">
-            <h2>LPG Conversion Model</h2>
+        <div class="section-header" style="color: white;">
+            <h2 style="color: white;">LPG Conversion Model</h2>
         </div>
         <div class="conversion-content">
             <div class="conversion-features">

@@ -15,7 +15,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1><i class="fas fa-fire"></i> OmniGas Technologies</h1>
+                    <a href="index.php?page=home">
+                        <img src="assets/images/logo.jpeg" alt="OmniGas Technologies PLC" class="logo-img">
+                        <span class="logo-text">OmniGas Technologies</span>
+                    </a>
                 </div>
                 <nav class="main-nav">
                     <ul>

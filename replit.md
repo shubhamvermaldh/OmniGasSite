@@ -94,7 +94,23 @@ The contact form submissions are stored in PostgreSQL database:
 - Fields: id, name, email, phone, subject, message, created_at
 - All form submissions are validated and sanitized before storage
 
+## Images and Media
+- **Company Logo**: Professional logo displayed in header (assets/images/logo.jpeg)
+- **Company Images**: 4 company photos showcased in gallery section
+- **Stock Images**: 7 professional stock images for:
+  - LPG plant facility backgrounds
+  - Autogas conversion/mechanic work
+  - Clean energy and sustainability
+  - Business partnership imagery
+- All images optimized with proper aspect ratios and hover effects
+- Hero sections feature beautiful background images with overlay gradients
+
 ## Recent Changes
+- October 22, 2025: Added all company images and professional stock photos
+- Logo integrated in header with company name
+- Gallery section created to showcase company operations
+- Background images added to hero sections and key content areas
+- Image hover effects and responsive image layouts implemented
 - October 16, 2025: Initial website creation with all pages
 - All content sourced from company presentation (PPT)
 - Professional design with energy/technology industry aesthetics
