@@ -1,4 +1,4 @@
-<section class="page-header" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%), url('assets/images/team_business_partne_858ea7bb.jpg') center/cover no-repeat;">
+<section class="page-header" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.50) 0%, rgba(59, 130, 246, 0.95) 100%), url('assets/images/team_business_partne_858ea7bb.jpg') center/cover no-repeat;">
     <div class="container">
         <h1>Contact Us</h1>
         <p>Get in touch with OmniGas Technologies</p>

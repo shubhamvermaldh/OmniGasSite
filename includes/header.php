@@ -23,7 +23,8 @@
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.php?page=home" class="<?= ($page === 'home') ? 'active' : '' ?>">Home</a></li>
-                        <li><a href="index.php?page=about" class="<?= ($page === 'about') ? 'active' : '' ?>">About</a></li>
+                        <li><a href="index.php?page=blog" class="<?= ($page === 'blog') ? 'active' : '' ?>">Blogs</a></li>
+                        <li><a href="index.php?page=about" class="<?= ($page === 'about') ? 'active' : '' ?>">About Us</a></li>
                         <li><a href="index.php?page=contact" class="<?= ($page === 'contact') ? 'active' : '' ?>">Contact</a></li>
                     </ul>
                 </nav>

@@ -1,4 +1,4 @@
-<section class="hero-section" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%), url('assets/images/lpg_gas_plant_indust_a5fd5858.jpg') center/cover no-repeat;">
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.50) 0%, rgba(59, 130, 246, 0.95) 100%), url('assets/images/lpg_gas_plant_indust_a5fd5858.jpg') center/cover no-repeat;">
     <div class="container">
         <div class="hero-content">
             <h1 class="hero-title">Energy Transition Solutions</h1>
@@ -17,7 +17,7 @@
             <h2>Company Overview</h2>
         </div>
         <div class="overview-grid">
-            <div class="overview-card">
+            <!-- <div class="overview-card">
                 <div class="card-icon"><i class="fas fa-eye"></i></div>
                 <h3>Vision</h3>
                 <p>To become a leading provider of safe, efficient, and innovative LPG infrastructure and solutions worldwide</p>
@@ -26,11 +26,11 @@
                 <div class="card-icon"><i class="fas fa-bullseye"></i></div>
                 <h3>Mission</h3>
                 <p>To deliver turnkey LPG systems, from concept to commissioning, with uncompromised safety, engineering excellence, and sustainability</p>
-            </div>
+            </div> -->
             <div class="overview-card">
                 <div class="card-icon"><i class="fas fa-building"></i></div>
-                <h3>Established</h3>
-                <p>2025</p>
+                <h3>Established & Industry</h3>
+                <p>2025 — OmniGas Technologies PLC</p>
             </div>
             <div class="overview-card">
                 <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -42,11 +42,6 @@
                 <h3>Founders</h3>
                 <p>Mr Banjo Tamiru & Mr Pawlos Tegenye</p>
             </div>
-            <div class="overview-card">
-                <div class="card-icon"><i class="fas fa-industry"></i></div>
-                <h3>Industry</h3>
-                <p>OmniGas Technologies PLC</p>
-            </div>
         </div>
     </div>
 </section>
@@ -54,8 +49,8 @@
 <section class="gallery-section">
     <div class="container">
         <div class="section-header">
-            <h2>Our Work in Action</h2>
-            <p class="section-subtitle">Delivering Excellence in LPG Solutions</p>
+            <h2>Our Latest Initiatives</h2>
+            <p class="section-subtitle">Delivering Excellence in LPG & CNG Solutions</p>
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -69,6 +64,12 @@
             </div>
             <div class="gallery-item">
                 <img src="assets/images/company-4.jpeg" alt="Our Team" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/company-5.jpeg" alt="Our Team" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/company-6.jpeg" alt="Our Team" loading="lazy">
             </div>
         </div>
     </div>
