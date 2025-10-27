@@ -238,6 +238,109 @@
     </div>
 </section>
 
+<style>
+    <style>
+body {
+  font-family: "Arial", sans-serif;
+  background: #f7f8fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.testimonial-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #1a237e;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.testimonial-item {
+  background: #f9fafc;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 30px 20px;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.testimonial-author h4 {
+  font-size: 18px;
+  color: #1a237e;
+  margin: 5px 0;
+}
+
+.testimonial-author span {
+  color: #777;
+  font-size: 14px;
+}
+</style>
+
+</style>
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+
+    <div class="owl-carousel testimonial-slider">
+
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>“OmniGas Technologies helped us switch to clean energy with professionalism and great support.”</p>
+        </div>
+        <div class="testimonial-author">
+          <!-- <img src="https://via.placeholder.com/80" alt="Client 1"> -->
+          <h4>John Doe</h4>
+          <!-- <span>Project Manager, GreenFuel</span> -->
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>“Their solutions are reliable and cost-effective. Truly a partner for sustainability.”</p>
+        </div>
+        <div class="testimonial-author">
+          <!-- <img src="https://via.placeholder.com/80" alt="Client 2"> -->
+          <h4>Sarah Kim</h4>
+          <!-- <span>Director, EnergyVision</span> -->
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>“Excellent service and innovative LPG systems that make a real difference.”</p>
+        </div>
+        <div class="testimonial-author">
+          <!-- <img src="https://via.placeholder.com/80" alt="Client 3"> -->
+          <h4>Michael Tesfaye</h4>
+          <!-- <span>CEO, EcoGas</span> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section class="cta-section">
     <div class="container">
         <div class="cta-content">

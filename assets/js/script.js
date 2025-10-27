@@ -15,3 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+$(document).ready(function(){
+  $(".testimonial-slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 800,
+    dots: true,
+    nav: false,
+    responsive:{
+      0:{ items:1 },
+      768:{ items:2 },
+      1024:{ items:3 }
+    }
+  });
+});
