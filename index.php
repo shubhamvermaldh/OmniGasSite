@@ -1,13 +1,17 @@
 <?php
-session_start();
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-$page = $_GET['page'] ?? 'home';
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-$allowed_pages = ['home', 'blog', 'single-blog', 'about', 'contact'];
-if (!in_array($page, $allowed_pages)) {
-    $page = 'home';
-}
-
-include 'includes/header.php';
-include "pages/{$page}.php";
-include 'includes/footer.php';
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
