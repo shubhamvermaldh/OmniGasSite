@@ -10,3 +10,10 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: omnigassite
 Tags: clean, minimal, responsive, blog
 */
+
+.about-content{
+    padding: 2rem 0;
+}
+.contact-info>li{
+    display: -webkit-inline-box;
+}

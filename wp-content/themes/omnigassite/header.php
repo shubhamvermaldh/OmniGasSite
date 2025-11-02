@@ -42,4 +42,4 @@
 	</div>
 </header>
 
-<main class="main-content">
+

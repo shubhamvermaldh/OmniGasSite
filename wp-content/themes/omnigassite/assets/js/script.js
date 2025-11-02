@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
   $(".testimonial-slider").owlCarousel({
     loop: true,
     margin: 20,
@@ -33,3 +33,48 @@ $(document).ready(function(){
     }
   });
 });
+
+
+function initScrollCounter(sectionSelector, counterSelector) {
+    jQuery(document).ready(function($) {
+        function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        var animated = false;
+
+        function startCounters() {
+            if (!animated && isScrolledIntoView(sectionSelector)) {
+                animated = true;
+
+                $(counterSelector).each(function() {
+                    var $this = $(this);
+                    var target = parseFloat($this.data('target')) || 0;
+                    var text = $this.text();
+                    var isPercent = text.includes('%');
+                    var isPlus = text.includes('+');
+                    var duration = 2000;
+
+                    $({ countNum: 0 }).animate({ countNum: target }, {
+                        duration: duration,
+                        easing: 'swing',
+                        step: function() {
+                            let value = Math.floor(this.countNum).toLocaleString();
+                            $this.text(value + (isPercent ? '%' : (isPlus ? '+' : '')));
+                        },
+                        complete: function() {
+                            $this.text(target.toLocaleString() + (isPercent ? '%' : (isPlus ? '+' : '')));
+                        }
+                    });
+                });
+            }
+        }
+
+        $(window).on('scroll resize', startCounters);
+        startCounters();
+    });
+}

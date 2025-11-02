@@ -151,12 +151,12 @@ body {
     position: relative;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
+.main-nav .menu-item.current_page_item a:hover,
+.main-nav .menu-item.current_page_item a {
     color: var(--primary-color);
 }
 
-.main-nav a.active::after {
+.main-nav .menu-item.current_page_item a::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -983,6 +983,8 @@ section {
     
     .mobile-menu-toggle {
         display: block;
+        border: 0;
+        background-color: unset;
     }
     
     .hero-title {
